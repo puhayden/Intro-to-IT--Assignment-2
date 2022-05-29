@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<div class="border">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Plans</title>
+    <div class="pagetitle">
+    <h1 style="text-align:center">Plans and Progress</h1>
+  </div>
+    <i><h2 style="font-size:25px; text-align:center; font-family: sans-serif;">Team Name: THUR Assignment 3 Group #25</h2></i>
+  </head>
+  <body>
+    <style>
+    #navbar {
+      overflow: hidden;
+      background-color: #555;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #6CB9C1;
+      color: white;
+    }
+
+    #navbar a.active {
+      background-color: #aa0404;
+      color: white;
+    }
+
+    .content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+    </style>
+
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="teamprofile.html">Team Profile</a>
+      <a href="idealjobs.html">Ideal Jobs</a>
+      <a href="tools.html">Tools</a>
+      <a href="project.html">Project</a>
+      <a href="skillsandjobs.html">Skills and Jobs</a>
+      <a href="groupreflection.html">Group Reflection</a>
+
+
+    </div>
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<p style="font-size: 20px;">The idea behind our project, “Downstream”, is streamlining access to different streaming services that a user has subscriptions for. Instead of checking and switching individually, they can search and watch any of them through our app/website. The finished project would include a comprehensive database for convenient searching, and the ability to redirect the user to their streaming service once they have chosen what to watch. Originally, the concept involved actually viewing through the app itself, but there is a murky swamp of legal issues surrounding that idea. Instead it was reworked so that by redirecting the user once they have chosen what to watch, Downstream simply acts as a conduit. No licensing required, and no copyright laws violated.</p>
+<p style="font-size: 20px;">The whole concept was created to fill the gap in the media streaming industry that is convenient. When dozens of streaming services want a finger in the proverbial pie, it can be time-consuming and difficult for a user to find and view their chosen show with the myriad of services to search through. Downstream eliminates this problem, by allowing the user to easily locate their media of choice and then get redirected to it with ease, provided they are subscribed to that service.</p>
+<p style="font-size: 20px;">This project idea was originally conceptualised by Liam, so he has been “the man with the plan”. He has the deepest understanding about the project, and much of this project has been our group recreating the vision in his head. In Assignment 2, Liam and Samantha worked together to flesh out this idea further, going into great depth about the functions, motivation, design, technology, and skills required. This detail was what the foundation we then built on for Assignment 3.
+Because of the magnitude of work on this project in Assignment 3, we split that half of the assignment alone into 10 different parts. Liam, as the most knowledgeable about the concept, took on writing the Overview and the Aims. This again included heavy details about many aspects of how Downstream would work, as well as additional goals such as advertising and monetisation. Although much of what was outlined isn’t within our current scope, the extended plan is outlined in the Timeline section covered by Matthew, and continues for another 10 weeks until ending at final release.
+</p>
+<p style="font-size: 20px;">Liam also again highlighted the grey area in terms of legality that our project falls into. For a proper release, hefty amounts of research and legal consultations would be required to ensure that the functions of Downstream doesn’t overstep the line.
+</p>
+<p style="font-size: 20px;">The next important section to cover is Scope and Limits, written by Samantha. Here it is outlined our goals for Assignment 3, as well as what we aren’t able to do within the constraints we have. While we were able to create a functional prototype of Downstream through Figma, many of the required software systems for a functional and finished product are beyond any group member at the moment. They would require both an extended timeframe, and multiple new people to come onboard. This means that the Figma prototype will be all about achieving that crucial intuitive design, but actually implementing any of Downstream’s functions is beyond our scope.
+
+</p>
+<p style="font-size: 20px;">Alex was the primary person working on Tools and Technologies, probably the most research-heavy and time consuming part of the entire assignment. This part goes into depth about the tools and technologies needed in order for ‘Downstream’ to be a running and overall function as an application across all of Australia. This includes an in-depth understanding and skill of using Application Programming Interface (API), Integrated Development Environment (IDE) and Cloud Computing. These are described both in Tools and Technologies and in Scopes and Limitations of their use within the system of ‘Downstream’. API and IDE are explored more in detail in Alex’s part as it was an unknown area for all members and we would want to explore and understand the application of them more.  Due to the team's limited knowledge and experience, understanding the Tools and Technology portion is important for us to explore as it is the skeleton of our project.
+</p>
+<p style="font-size: 20px;">In the Timeframe section, written by Matthew, the timeline of our progress has been filled in for the few weeks we have worked on this project, and then extended for another 10 weeks in order to show the hypothetical scenario where our scope increased enough to fit in a full release with all the bells and whistles, such as advertising. It is divided by week and by group-member, and shows a combination of working separately and together on different parts of the project to ensure everything gets finished. By playing to the strengths of each member to maximise efficiency, it creates a goal that, with an extra 10 weeks and nothing else on, could be achievable.
+</p>
+<p style="font-size: 20px;">
+Samantha’s other section on Risks is mainly focused on the legal risks our group could face, should we release a functioning app or website without making sure that we’ve ‘parked between the lines’. The entire concept of Downstream revolves around letting the user search through and easily access the libraries of their subscription services, but we have to be very careful that we don’t overstep our legal boundaries or we could be in a lot of trouble. Not only do we have to abide by the Australian copyright laws, but also take into consideration the laws of the United States when working with a streaming service like Netflix that originated overseas. Another risk that was explored by Samantha was the technical risks that come with the use of API’s and their lack of security. As said before, ‘Downstream’ is an application that will allow Australian users to view information about the entertainment industry on other streaming platforms. This will also require users private information that is valuable to other industries such as Advertisement. Samantha discusses this security risk API’s hold.
+</p>
+<p style="font-size: 20px;">Finally, the Figma prototype, created almost entirely by Matthew, but with large amounts of creative input by the entire group. Because convenience is the cornerstone of Downstream, having an intuitive design is of the utmost importance. To achieve this, many design principles and heuristics were taken into consideration, as well as other factors like thumb zones. The prototype uses elements of the design thought up and fleshed out by Liam since Assignment 2, with four pages accessible through a footer with self-explanatory icons. All of the functions are straightforward and obvious. The Figma prototype represents as close as possible the design of the final product, the only thing missing is the backend.
+</p>
+<p style="font-size: 20px;">
+That is the current state of our project, and the one it will end on. We have a plan laid out that with more time and more people a full release could be doable, but that is way outside of our current scope, and so here we shall stay.
+</p>
+
+</div>
+  </body>
+</html>

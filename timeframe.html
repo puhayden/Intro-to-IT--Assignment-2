@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<div class="border">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Timeframe</title>
+    <div class="pagetitle">
+    <h1 style="text-align:center">Timeframe</h1>
+  </div>
+    <i><h2 style="font-size:25px; text-align:center; font-family: sans-serif;">Team Name: THUR Assignment 3 Group #25</h2></i>
+  </head>
+  <body>
+    <style>
+    #navbar {
+      overflow: hidden;
+      background-color: #555;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #6CB9C1;
+      color: white;
+    }
+
+    #navbar a.active {
+      background-color: #aa0404;
+      color: white;
+    }
+
+    .content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+    </style>
+
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="teamprofile.html">Team Profile</a>
+      <a href="idealjobs.html">Ideal Jobs</a>
+      <a href="tools.html">Tools</a>
+      <a href="project.html">Project</a>
+      <a href="skillsandjobs.html">Skills and Jobs</a>
+      <a href="groupreflection.html">Group Reflection</a>
+
+
+    </div>
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+  </body>
+</div>
+</html>

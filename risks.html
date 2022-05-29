@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<div class="border2">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Risks</title>
+    <div class="pagetitle">
+    <h1 style="text-align:center">Risks</h1>
+    </div>
+    <i><h2 style="font-size:25px; text-align:center; font-family: sans-serif;">Team Name: THUR Assignment 3 Group #25</h2></i>
+  </head>
+  <body>
+    <style>
+    #navbar {
+      overflow: hidden;
+      background-color: #555;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #6CB9C1;
+      color: white;
+    }
+
+    #navbar a.active {
+      background-color: #aa0404;
+      color: white;
+    }
+
+    .content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+    </style>
+
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="teamprofile.html">Team Profile</a>
+      <a href="idealjobs.html">Ideal Jobs</a>
+      <a href="tools.html">Tools</a>
+      <a href="project.html">Project</a>
+      <a href="skillsandjobs.html">Skills and Jobs</a>
+      <a href="groupreflection.html">Group Reflection</a>
+
+
+    </div>
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<h2>Legal</h2>
+<p style="font-size:18px"> In terms of profitability and accessibility, ‘Downstream’ would ideally want to display in hosting service for streaming, however due to legal restrictions, redirection to the main streaming platform or multiplayer viewing would be ideal. Nonetheless, as ‘Downstream’ uses the entertainment industry, we as a group need to understand and take into account the legal issues it brings by affiliating with globalised streaming services. Services such as Netflix, Disney +, Amazon Prime, are all globalised streaming platforms that carry different rules and regulations in their respective origin countries. Previously mentioned in Assignment 2, as ‘Downstream’ is an informational website, mentions of American streaming services such as HBO Max, Hulu, Warner Studios, will be provided to showcase accurate information. However, these American services currently do not have licensing rights to stream its content in Australia. By redirecting ‘Downstream’ users to these platforms could potentially be harmful to users if these platforms do not have a geo-restriction, users could be persuaded to purchase an account which could ultimately increase major fines to Australians by illegitimately accessing through a fraudulent address, sharing an account, etc. To avoid this ‘Downstream’ should consider partnering with Australian streaming platforms and platforms that “currently own[ing] the exclusive rights to WarnerMedia content, which encompasses all of HBO” (Alastair Carins, 2022) such as Stan and Foxtel Go, would be easier in terms of copyright ownership. However, according to Screen Hub Australia, Finder “claims that 88% of Australians use at least one subscription service; Netflix harvests just over 66% while Stan, Amazon Prime and Disney + fight their way around the 30-40% band. ” (David Tiley 2021, para.2) This suggests that Australians are primarily watching through Netflix and ‘Downstream’ utilising this globalised platform. In terms of accounting for globalised platforms, ‘Downstream’ should be taking the risk to provide our users with these as their popularity and overall usage is much more prominent in Australian society. In order to minimise the risk, we must abide by the rules and regulations which include copyright law, from the Australian government but as well as the origins of streaming platforms such as the United States.
+</p>
+<h2>Technical</h2>
+<p style="font-size:18px"> There is also a general risk when it comes to API’s, IDE’s and Cloud computing is the level of complexity when it comes to building and designing them at a pristine standard. These software systems require skill and qualifications that our team does not have at the current time, therefore it would be a risk for us to manage these systems with the limited knowledge available. As ‘Downstream’ would be using API's, IDE’s and Cloud computing there are risks associated with each one. API’s which allow for multiplayer viewing for our application comes with security risks. Axway, an American Information Technology company states that “To safeguard the security of your APIs, validation of SSL certificates is always necessary” (Unknown, para. 3) and that is an avenue that we as a team have not further researched. Axway also states that “they [hackers] can steal your API keys, passwords and usernames” (Unknown, para. 3) and as ‘Downstream is will have users whose information is shared with us, it is important for their private information to be secure as well such as addresses, payment methods, names, ages, phone numbers, etc. Bill Doerrfeld, a technology journalist wrote on Security Boulevard, “the value of APIs (and data) has risen” (Doerrfeld, para. 5) was discussed with Roey Eliyahu, CEO of Salt Security. As ‘Downstream’ encompasses users and their sensitive information, it is important that security measures are in place so that their information is not sold to third parties who will utilise it in their favour. This also falls back on the limited amount of knowledge our team currently has when it comes to coding and security the API for ‘Downstream’ which is why experienced and skilled members are also necessary for the launch of ‘Downstream’.
+</p>
+
+<p>1. Alastiar Cairns 2022,  HBO Max Australia: how to watch the streaming service down under, Happy Mag, viewed 30 April 2022 <br>
+2. David Tiley 2021, Who is winning the Australian streaming war?, viewed 23 May 2022 <br>
+3. Unknown, Top 10 API Security Risks, Axway, viewed 25 May 2022<br>
+4. Bill Doerrfeld, 2021, For Hackers, APIs are Low-Hanging Fruit, Security Boulevard, viewed 25 May 2022</p>
+  </body>
+</div>
+</html>

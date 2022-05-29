@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<div class="border">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Scope and Limits</title>
+    <div class="pagetitle">
+    <h1 style="text-align:center">Scope and Limits</h1>
+  </div>
+    <i><h2 style="font-size:25px; text-align:center; font-family: sans-serif;">Team Name: THUR Assignment 3 Group #25</h2></i>
+  </head>
+  <body>
+    <style>
+    #navbar {
+      overflow: hidden;
+      background-color: #555;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #6CB9C1;
+      color: white;
+    }
+
+    #navbar a.active {
+      background-color: #aa0404;
+      color: white;
+    }
+
+    .content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+    </style>
+
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="teamprofile.html">Team Profile</a>
+      <a href="idealjobs.html">Ideal Jobs</a>
+      <a href="tools.html">Tools</a>
+      <a href="skillsandjobs.html">Skills and Jobs</a>
+      <a href="project.html">Project</a>
+      <a href="groupreflection.html">Group Reflection</a>
+
+
+    </div>
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<p style="font-size:20px">In terms of Scopes and Limitations, as a team we believe that we are able to create prototypes of the design of the mobile app and the overall function and interactivity of ‘Downstream’ as a database application. This is due to the time available before submission and the skills that our teams currently have. Later, we discussed Application Programming Interface (API), Independent Developer Environments (IDE) and Cloud computing are the general use of these software systems to implement in ‘Downstream’. These systems would be used as a “set of functionalities provided by a third-party component that is made available to software developers” (Bacchelli, Sawant, para.2) for ‘Downstream’, combining all the tools necessary to run the application and a database to hold the information. However, these cannot be developed currently due to their complexity and the limitation of our team's knowledge about these systems. These programs used would be more long term goals for us to implement in ‘Downstream’ as on average these would take a long time to produce for both mobile apps and desktops applications. These would also need a specialised team that has roles such as web server developers, software developers, cloud strategist, etc, to produce these systems that our team simply does not have the capabilities to do so at present. However, in time to deliver our project to the due date of this assignment as well as our team's current skill levels, our team is able to produce and create prototypes of the general layout of ‘Downstream’ website and mobile app which is functional to use. These mockups will be produced on Figma as it is a prototyping tool which can produce mobile app prototypes. These will include an aesthetic design and layout but also how ‘Downstream’ intends to present its data for users. </p>
+
+  </body>
+</div>
+</html>

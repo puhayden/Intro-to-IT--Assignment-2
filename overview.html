@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<div class="border">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Overview</title>
+    <div class="pagetitle">
+    <h1 style="text-align:center">Overview</h1>
+    </div>
+    <i><h2 style="font-size:25px; text-align:center; font-family: sans-serif;">Team Name: THUR Assignment 3 Group #25</h2></i>
+  </head>
+  <body>
+    <style>
+    #navbar {
+      overflow: hidden;
+      background-color: #555;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #6CB9C1;
+      color: white;
+    }
+
+    #navbar a.active {
+      background-color: #aa0404;
+      color: white;
+    }
+
+    .content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+    </style>
+
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="teamprofile.html">Team Profile</a>
+      <a href="idealjobs.html">Ideal Jobs</a>
+      <a href="tools.html">Tools</a>
+      <a href="project.html">Project</a>
+      <a href="skillsandjobs.html">Skills and Jobs</a>
+      <a href="groupreflection.html">Group Reflection</a>
+
+
+    </div>
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<h2>Overview</h2>
+<p style="font-size:18px;">THURS Group #25’s team project is a phone application/website entitled ‘Downstream’. Downstream is intended as a quality-of-life application designed to fill a gap identified by our group in the media streaming industry. Downstream is designed to act as a form of hub for a user’s owned third-party streaming services, allowing a user to collate and access all of their separate streaming accounts from a single platform. Downstream would function similarly to the iPhone Wallet app where you can easily select what service you wish to access at any given time and then would open the desired streaming service within the application for easy access. The primary function of Downstream is to maintain a comprehensive database search function to locate the designated host platform (Netflix, Stan and Disney+ etc) of a desired piece of media and to open the chosen media, with the use of inbuilt API’s within the window of Downstream while redirecting user’s traffic through to the host platform.</p>
+
+<p style="font-size:18px;">Essentially Downstream will not hold the licensing rights of the media users consume through the application but will store all of a user’s subscribed streaming services in one place and will allow the user to redirect to the streaming platform that hosts the media they want to watch through API’s. What this means is that the users will still be streaming from their third-party streaming services, but through a window within Downstream. Legally, Downstream would not violate any Australian copyright laws and would actively promote the fact that all streaming is done through the host platforms and are licensed by said platforms. Downstream would simply act as a conduit and guide for media hosted by other streaming services.</p>
+
+<p style="font-size:18px;">Our choice to remain local rather than create an internationally available application could potentially be reconsidered post launch. But the complexities of trying to navigate various countries differing laws regarding copyright and licensing would provide too many problems. Not only would it make it simpler to ensure our application was legally viable, but we would be entering a market without any existing competition, ensuring that Downstream has a better chance of attracting new users.</p>
+
+<p style="font-size:18px;">THURS Group #25’s motivation for creating Downstream is to offer a solution to the frustration that can come from being unable to find the content that you are wanting to watch. Today there are dozens of streaming services that all offer their own unique viewing experiences, from the vast array of titles on platforms such as Netflix or Disney+, to more niche services such as Crunchyroll or Shudder. It is exceedingly common for the  average household to  have multiple streaming subscriptions. Many of our group members utilise 9+ separate streaming platforms and at times struggle to locate which of our services are currently offering the tv show or movie that we intend to watch as well as new ones that interest each of our unique tastes. More frustratingly, platforms regularly rotate their available content in accordance with licensing agreements, so shows that were once accessible on one service may have been removed and picked up by another, as this happens regularly due to Australia’s interesting right ownerships due to Australian companies such as Foxtel, acquiring foreign films that create unique Australian ownership. Which ultimately makes for a frustrating user experience. ‘Downstream’ would seek to remedy this problem and accommodate the fast-growing number of streaming platforms by compiling all of a user’s subscriptions in one place. </p>
+
+<p style="font-size:18px;">Downstream has no competitors within the Australian market. Though internationally there does exist a similar app operating within the United States, Reelgood. Reelgood only offers its services within America as it adheres to American copyright and licensing laws. Downstream would have no local competitors and as such would have a monopoly over the Australian market. This would make it easier to make Downstream more profitable in the short term as well as to grant a focus on local advertising, to an audience our group is extremely familiar with as Australian citizens.</p>
+
+
+<h2>Detailed Description</h2>
+<p style="font-size:18px">The primary goal of Downstream is to provide an easy to navigate service that makes it simple for users to locate their desired media quickly. After the initial login page, Downstream will feature four pages within the app for the user to navigate through via a small footer at the bottom of the screen with simple explanative icons.The first page will be ‘Library’, this page will show the user their available streaming hosts in a minimalistic easy to navigate list. The ‘Library’ page will also include a tab for adding additional streaming platforms. Selecting the ‘Add’ button would give users a comprehensive list of streaming hosts and give them the option of selecting their owned services and logging in within a popup window directed to the corresponding streaming host. Upon successfully logging in to the selected third-party streaming host  through  the  popup,  the  service  would be  added  to  the user’s personal Downstream library.The ‘Library’ page will also feature a search function allowing users to quickly search for titles of specific shows or movies and will be provided with relevant results detailing which service hosts  the media, whether it is in the user’s current library and will offer the user a button that will direct them into the corresponding streaming host and to their media.In the case that the user does not have the service in their library, they will be offered to add the relevant host to their existing library.The second page will be the ‘My Lists’ page and will offer users the option of adding media to a list as a reminder for future viewing.The third page will be the ‘Recently Added’ page and will offer a regularly updated list of notifications of titles that have been recently added to hosting services already within the user’s library.The fourth and final page will be the ‘Settings’ page and will offer the user options for account configuration and management, help and contact information for troubleshooting and general app settings.The initial screen will feature a loginWhen first opening the application users will be prompted to create a new account or sign in to an existing one.</p>
+
+<p style="font-size:18px">Although the American entertainment industry is by far the largest and most popular, ‘Downstream’ should only be using and applying streaming services that are available within Australia or else there will be legal issues. American streaming services such as HBO Max or Hulu, currently do not have licensing rights to stream its content in Australia, and many Australians can receive a major fine by illegitimately accessing Hulu through a fraudulent address, sharing an account, etc. This is due to ‘Australian Tax’, which is described to be a “generally higher prices in Australia of goods and services than equivalent costs in… [other] nations such as the United States.” (Wikipedia 2021, para. 1) or because of Foxtel “currently own[ing] the exclusive rights to WarnerMedia content, which encompasses all of HBO” (Alastair Carins, 2022). Foxtel also has extended its rights to Cartoon Network, Boomerang and CNN. This currently means Hulu, HBO Max and other streaming services are blocked through geo-restrictions for Australian users. ‘Downstreams’ main goal is to provide its users with the correct film information as well as a legal streaming platform to access it, this is something to consider when designing and implementing this application. This problem can be solved by acquiring platforms such as Foxtel, who carry some of these rights,  and showcasing a brief explanation to users regarding the availability of a particular entertainment product. A priority of ‘Downstream’ will be providing a service that is in accordance with the Australian legislation as well as the correct information to users about Australia's unique rights compared to other countries.</p>
+
+<p style="font-size:18px">Another legal licensing reason, Downstream will not host any of the content from the included third-party streaming hosts and will simply act as a directory and will bridge the gap between third-party streaming platforms and will redirect users to their desired content hosted on the external streaming services.</p>
+
+<h2>Aims</h2>
+<h2>Main Aim</h2>
+<h3>Launch Downstream to positive public reception</h3>
+<br>
+
+<p style="font-size:18px">The end result of Downstream and the major goal is to successfully launch the app with all planned features fully functional and operating as intended. A successful launch would be determined by the public reception of the application at launch, the building of a dedicated and thriving user base. As a quality-of-life application, Downstream needs to successfully meet all of its users’ expectations and needs with a focus on a seamless and easy to navigate app experience for users. For this aim to be satisfied and exceed smaller goals (listed below) need to be met.</p>
+<br>
+
+<h2>Sub Goals</h2>
+<h3>Advertising</h3>
+
+<p style="font-size:18px">Prior to Downstream’s official launch and late into the development cycle, Downstream would require local advertising to generate buzz and awareness for the application. An app with a focus in streaming and a modern entertainment solution should be promoted through more modern advertising streams. Platforms such as social media, streaming sites, websites and blogs would all be key platforms to reach our intended audience. Of course as an Australian application all advertising would be local to Australia and would help reduce the cost of promotion.</p>
+
+<h3>Monetisation</h3>
+
+<p style="font-size:18px">For Downstream to have a dedicated team for customer service/help and maintenance of the database, servers and to provide updates post launch, the app would need to have options for monetisation and profitability. As a quality of life application that is seeking to embed itself in an industry where paid subscriptions are the primary method of profiting, it would be ridiculous to offer a subscription plan for Downstream as customers would be unlikely to want to pay for a quality of life upgrade on top of their existing subscriptions. This leaves two options, in app advertising or brand deals. In app advertising would create an eyesore for users when Downstream is supposed to make finding entertainment simpler. So the remaining option is to make agreements and partnerships with hosted streaming services to promote their content on the app and to offer deals for Downstream users to receive reduced memberships for certain services. While not ideal this is likely the option that users would find most agreeable and would most benefit Downstream users as well as providing a potential revenue stream for Downstream.</p>
+
+<h3>Coding & UI Design</h3>
+
+<p style="font-size:18px">Downstream’s successful development hinges on strong coding with seamless API integration and an easy to navigate design that is both intuitive and familiar to users across a varied range of backgrounds. The single most important goal for the overall success of Downstream and its public reception is a well-designed application that serves its intended purpose and makes users' entertainment experience more enjoyable as a result. If this criterion is not met then Downstream will likely be a failure from launch. To successfully achieve this goal Downstream must fulfil all of its previously outlined features.</p>
+
+<h3>Legality of Features</h3>
+
+<p style="font-size:18px">As Downstream will hold no licensing rights to the content it is promoting, there is a grey line that is being broached. The importance of the legality of Downstream’s features and function is imperative to the app ever making it off the design room floor. It would be the first priority for the team to consult with Australian copyright and contract solicitors prior to the beginning of Downstream’s development to ensure that each proposed feature is legal and above board as well making sure that the group is not liable for copyright infringement.</p>
+  </body>
+</div>
+</html>

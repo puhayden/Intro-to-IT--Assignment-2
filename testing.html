@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<div class="border2">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Testing</title>
+    <div class="pagetitle">
+    <h1 style="text-align:center">Testing</h1>
+    </div>
+    <i><h2 style="font-size:25px; text-align:center; font-family: sans-serif;">Team Name: THUR Assignment 3 Group #25</h2></i>
+  </head>
+  <body>
+    <style>
+    #navbar {
+      overflow: hidden;
+      background-color: #555;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: #6CB9C1;
+      color: white;
+    }
+
+    #navbar a.active {
+      background-color: #aa0404;
+      color: white;
+    }
+
+    .content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+    </style>
+
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="teamprofile.html">Team Profile</a>
+      <a href="idealjobs.html">Ideal Jobs</a>
+      <a href="tools.html">Tools</a>
+      <a href="project.html">Project</a>
+      <a href="skillsandjobs.html">Skills and Jobs</a>
+      <a href="groupreflection.html">Group Reflection</a>
+
+
+    </div>
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+    <p style="font-size:20px">If our project “Downstream” is developed, there will be multiple ways to test it’s functionalities and how users may interact with them. As this is a mobile application, Initially we would utilise user lab testing properly. The way we are going to achieve that is through a private test version which its main purpose is to ensure that the database is working and updating properly. By gathering a small group of test users, specifically users that frequent streaming websites such as Netflix and Stan often to test the functionalities of our application and provide feedback in which the data and experience of our tests users will be accounted for in making important changes and bug fixes before fully releasing the application. </p>
+    <p style="font-size:20px">We would also gather the same type of users who share the same traits as the ones mentioned above, and split them up into control groups. The first group would receive a working prototype while the second group would recieve an older version of our application, from there we would determine and research the differences between the responses of group A compared to group B which was given an older version of the application. This allows us to determine whether the changes we implemented have been useful and successful, furthermore giving us valuable insight of the interactions between the users and the prototype we have made. </p>
+    <p style="font-size:20px">
+In addition to that we would a different type of method to test our product effectiveness. This test will require us to interview a smaller selection of individuals, during the interview - they will be tasked with doing simple tasks on the application and testing the functionality of Downstream. After they have completed the tasks, we will question their experience with it find any issues they had while testing the application and any suggestions to improve upon. Accompanying the interview method of research, we plan to distribute a survey relating to user experience within the same field (streaming services) and asking them about their prior experiences with streaming services in order to create and modify Downstream, making it unique and include users needs and wants. This would be focused mainly on the design aspect of the application, how both design and interface can cater to what our users need. (eg. closed captions, or text to speech for people who require it)
+</p>
+    <p style="font-size:20px">Therefore, these methods of research and testing will allow us to make proper changes and ensure that it is completely up to our standards before release.</p>
+
+  </body>
+</div>
+</html>
